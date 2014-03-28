@@ -72,7 +72,7 @@ There are also more sophisticated examples in the subdirectories:
 * [examples/3sat](https://github.com/nakal/qubs/tree/master/examples/3sat) - 3-SAT problem generator
 * [examples/nqueens](https://github.com/nakal/qubs/tree/master/examples/nqueens) - n-queens problem generator
 
-### input8.txt
+### Simple example
 
 ```
 EXISTS
