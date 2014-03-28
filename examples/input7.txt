@@ -1,0 +1,6 @@
+FORALL
+x
+OR
+x
+NOT
+x

@@ -1,0 +1,13 @@
+FORALL
+x
+FORALL
+y
+IFF
+OR
+x
+y
+OR
+OR
+x
+y
+y

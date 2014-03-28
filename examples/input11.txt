@@ -1,0 +1,16 @@
+EXISTS
+x
+EXISTS
+y
+EXISTS
+z
+NOT
+IF
+IF
+IF
+x
+y
+z
+IF
+x
+z

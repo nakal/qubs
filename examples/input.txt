@@ -1,0 +1,22 @@
+AND
+AND
+OR
+OR
+NOT
+x
+y
+z
+OR
+x
+z
+OR
+OR
+x
+NOT
+y
+NOT
+z
+; !x y z
+; x z
+; x !y !z
+(z ? (y ? (x ? 1 : 0) : 1) : (y ? (x ? 1 : 0) : (x ? 0 : 0)))
