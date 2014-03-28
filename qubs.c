@@ -104,17 +104,18 @@ int main(int argc, char *argv[]) {
 
 	if (help) {
 		printf("%s [ -s | -t | -c ]\n", argv[0]);
-		printf("\tEvaluates first order term in postfix notation.\n");
+		printf("\tEvaluates a QBF term in postfix notation.\n");
 		printf("\n\tParameters:\n");
-		printf("\t\t-s satisfiability (default)\n");
-		printf("\t\t-t tautology\n");
-		printf("\t\t-c contradiction\n");
-		printf("\t\t-i interactive\n");
-		printf("\t\t-v verbose (can be specified multiple times)\n");
+		printf("\t\t-s\tsatisfiability (default)\n");
+		printf("\t\t-t\ttautology\n");
+		printf("\t\t-c\tcontradiction\n");
+		printf("\t\t-i\tinteractive\n");
+		printf("\t\t-v\tverbose (can be specified multiple times)\n");
 		printf("\t\t\t1 = query written to terminal\n");
 		printf("\t\t\t2 = plus progress output\n");
 		printf("\t\t\t3 = plus optimized BDD output\n");
 		printf("\t\t\t4 = plus unoptimized BDD output\n");
+		printf("\t\t-o\toutput truth table\n");
 		printf("\n");
 		exit(-1);
 	}

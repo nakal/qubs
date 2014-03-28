@@ -17,6 +17,7 @@ qubs takes a quantified Boolean formula in reverse polish notation
 		2 =	plus progress output
 		3 =	plus optimized BDD output
 		4 =	plus unoptimized BDD output
+	-o	output truth table
 ```
 
 The exit code also reflects the result (according to the selected evaluation mode):
@@ -63,6 +64,9 @@ constellation that satisfies the first argument but cannot satisfy the second on
 The logical equivalence (equality) has 2 arguments. It evaluates to true, if first argument
 implies the second and vice versa with same variable constellation.
 
+### Comments
+A comment is introduced with '#'.
+
 ## Examples
 
 You can find some examples in the directory [examples](https://github.com/nakal/qubs/tree/master/examples).
@@ -100,4 +104,17 @@ tautology: no
 contradiction: yes
 ```
 
+```
+# qubs -o
+No matches.
+```
 
+### Running 4-queens
+
+```
+# cd examples/nqueens
+# ./nqueens.pl 4 | qubs -o | ./solutions2html.pl > 4queens.html
+# firefox 4queens.html
+```
+
+Try yourself!
