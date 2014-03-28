@@ -17,7 +17,9 @@ if (!$found) {
 	die "No solutions found in this file.\n";
 }
 
-my @vars = split /,/,<STDIN>;
+my $headline = <STDIN>;
+chomp $headline;
+my @vars = split /,/,$headline;
 my $solutionnr = 1;
 my $numvars = scalar(@vars);
 my $checkboardsize = int(sqrt($numvars));
@@ -46,6 +48,7 @@ sub output_solution {
 	foreach (my $i=0; $i<$numvars; $i++) {
 		my $r = $sola[$i];
 		if ($r eq "1") {
+			#print "$i: $vars[$i]\n";
 			$solh{$vars[$i]}=1;
 			$control++;
 		}
