@@ -1,4 +1,6 @@
 
+CC=cc
+CFLAGS=-W -Wall -pedantic
 OBJS=qubs.o bdd.o list.o hash.c memory.o
 
 all:
@@ -8,7 +10,7 @@ all:
 compile: $(OBJS)
 
 .c.o:
-	$(CC) -c -o $@ $<
+	$(CC) $(CFLAGS) -c -o $@ $<
 
 clean:
 	rm -f *.o qubs
